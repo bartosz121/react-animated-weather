@@ -84,6 +84,21 @@ Props:
   - WIND
   - FOG
 
+  - **New Icons:**
+
+  - SHOWERS_DAY
+  - SHOWERS_NIGHT
+  - RAIN_SNOW
+  - RAIN_SNOW_SHOWERS_DAY
+  - RAIN_SNOW_SHOWERS_NIGHT
+  - SNOW_SHOWERS_DAY
+  - SNOW_SHOWERS_NIGHT
+  - THUNDER
+  - THUNDER_RAIN
+  - THUNDER_SHOWERS_DAY
+  - THUNDER_SHOWERS_NIGHT
+  - HAIL
+
 - **color:** Pass a color value or hex code to color the weather component, if not passed, by default _black_ is picked
 
 - **size:** Pass a number to size the weather component in pixels, if not passed, by default _64_ is set as the size
