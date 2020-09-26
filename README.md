@@ -84,7 +84,7 @@ Props:
   - WIND
   - FOG
 
-  - **New Icons:**
+- **New Icons:**
 
   - SHOWERS_DAY
   - SHOWERS_NIGHT
