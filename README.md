@@ -8,6 +8,12 @@ Animated weather component for React inspired by Skycons http://darkskyapp.githu
 
 ![React Animated Weather](./react-animated-weather.gif "React Animated Weather")
 
+## Fork info
+
+This is react-animated-weather "glued" together with extended version of Skycons from here http://galdiuz.github.io/skycons/
+
+![React Animated Weather Extended](./react-animated-weather-extended.gif "React Animated Weather Extended")
+
 ## Installation
 
 **React Animated Weather** is available as a node package. Get it via `yarn` or `npm`:
@@ -35,20 +41,20 @@ npm install --save react-animated-weather
 Import the ReactAnimatedWeather component:
 
 ```javascript
-import ReactAnimatedWeather from 'react-animated-weather';
+import ReactAnimatedWeather from "react-animated-weather";
 ```
 
 Sample usage:
 
 ```javascript
-import React from 'react';
-import ReactAnimatedWeather from 'react-animated-weather';
+import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 const defaults = {
-  icon: 'CLEAR_DAY',
-  color: 'goldenrod',
+  icon: "CLEAR_DAY",
+  color: "goldenrod",
   size: 512,
-  animate: true
+  animate: true,
 };
 
 const App = () => (
@@ -66,6 +72,7 @@ export default App;
 Props:
 
 - **icon:** Takes a string to display the corresponding icon out of the following
+
   - CLEAR_DAY
   - CLEAR_NIGHT
   - PARTLY_CLOUDY_DAY
@@ -77,11 +84,11 @@ Props:
   - WIND
   - FOG
 
-- **color:** Pass a color value or hex code to color the weather component, if not passed, by default *black* is picked
+- **color:** Pass a color value or hex code to color the weather component, if not passed, by default _black_ is picked
 
-- **size:** Pass a number to size the weather component in pixels, if not passed, by default *64* is set as the size
+- **size:** Pass a number to size the weather component in pixels, if not passed, by default _64_ is set as the size
 
-- **animate:** Pass a boolean value, if *true* (by default), the weather component will animate and if *false*, the weather component will remain static without any animation
+- **animate:** Pass a boolean value, if _true_ (by default), the weather component will animate and if _false_, the weather component will remain static without any animation
 
 Here are the default props used by ReactAnimatedWeather component:
 
@@ -89,25 +96,25 @@ Here are the default props used by ReactAnimatedWeather component:
 ReactAnimatedWeather.defaultProps = {
   animate: true,
   size: 64,
-  color: 'black'
+  color: "black",
 };
 
 ReactAnimatedWeather.propTypes = {
   icon: PropTypes.oneOf([
-    'CLEAR_DAY',
-    'CLEAR_NIGHT',
-    'PARTLY_CLOUDY_DAY',
-    'PARTLY_CLOUDY_NIGHT',
-    'CLOUDY',
-    'RAIN',
-    'SLEET',
-    'SNOW',
-    'WIND',
-    'FOG'
+    "CLEAR_DAY",
+    "CLEAR_NIGHT",
+    "PARTLY_CLOUDY_DAY",
+    "PARTLY_CLOUDY_NIGHT",
+    "CLOUDY",
+    "RAIN",
+    "SLEET",
+    "SNOW",
+    "WIND",
+    "FOG",
   ]).isRequired,
   animate: PropTypes.bool,
   size: PropTypes.number,
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 ```
 
